@@ -10,6 +10,8 @@ import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument('book_file', help='appString file name')
+parser.add_argument('-o', '--output_folder',
+                    help='place to output', default=os.getcwd())
 parser.add_argument('-l', '--localizable_folder',
                     help='output strings folder name',
                     default='Localizable')
@@ -17,8 +19,6 @@ parser.add_argument('-f', '--localizable_file',
                     help='output strings file name',
                     default='Localizable.strings')
 parser.add_argument('-q', '--quite', help='quite run', action="store_true")
-parser.add_argument('-o', '--output_folder',
-                    help='place to output', default='./')
 args = parser.parse_args()
 
 context_line_format = '\"{0}\"=\"{1}\";'
