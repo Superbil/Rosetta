@@ -21,7 +21,7 @@ parser.add_argument('-f', '--localizable_file',
 parser.add_argument('-q', '--quite', help='quite run', action="store_true")
 args = parser.parse_args()
 
-context_line_format = '\"{0}\"=\"{1}\";'
+context_line_format = '\"{0}\" = \"{1}\";'
 language_map = {"Simplified Chinese": "zh-Hans.lproj",
                 "Traditional Chinese": "zh-Hant.lproj",
                 "English": "en.lproj",

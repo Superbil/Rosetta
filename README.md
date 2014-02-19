@@ -1,7 +1,7 @@
 apStringToLocalizable
 =====================
 
-covert Excel file to localizable files
+covert Excel file to [localizable](https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPInternational/Articles/StringsFiles.html) files
 
 Requirements
 =====
