@@ -75,7 +75,7 @@ for l in range(len(language)):
                 value = sh.cell_value(c, l)
 
                 # check this line is comment
-                if key[:2] == '//':
+                if key[:2] == '//' or key[:2] == '/*':
 
                     # don't insert space on first line
                     if c is not 1:
