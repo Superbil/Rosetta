@@ -36,7 +36,8 @@ language_map = {"Simplified Chinese": "zh-Hans.lproj",
                 "Japanese": "ja.lproj",
                 "Portuguese": "pt.lproj",
                 "Polish": "pl.lproj",
-                "Turkish": "tr.lproj"}
+                "Turkish": "tr.lproj",
+                "Russian": "ru.lproj"}
 
 book = xlrd.open_workbook(args.book_file, encoding_override='utf-8')
 # always use first one
