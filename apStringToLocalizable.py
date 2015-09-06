@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 __author__ = 'Superbil'
@@ -53,7 +53,7 @@ for l in range(len(language)):
         language_name = language_map[language[l]]
 
         if not args.quite:
-            print '>> Working on {0}'.format(language_name)
+            print('>> Working on {0}'.format(language_name))
 
         lang_base_folder = os.path.join(args.output_folder,
                                         args.localizable_folder)
@@ -61,7 +61,7 @@ for l in range(len(language)):
         if not os.path.exists(lang_folder):
 
             if not args.quite:
-                print ">> folder is not existes, create it"
+                print(">> folder is not existes, create it")
 
             os.makedirs(lang_folder)
 
@@ -81,11 +81,11 @@ for l in range(len(language)):
                     # don't insert space on first line
                     if c is not 1:
                         if not args.quite:
-                            print ""
+                            print("")
                         f.write('\n')
 
                     if not args.quite:
-                        print key
+                        print(key)
                     f.write(key + '\n')
 
                 else:
@@ -93,7 +93,7 @@ for l in range(len(language)):
                     if key and value:
                         v = value.encode('utf-8')
                         if not args.quite:
-                            print context_line_format.format(key, v)
+                            print(context_line_format.format(key, v))
                         f.write(context_line_format.format(key, v) + '\n')
 
     except KeyError:
