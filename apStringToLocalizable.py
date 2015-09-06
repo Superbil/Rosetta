@@ -91,10 +91,8 @@ for l in range(len(language)):
                 else:
                     # null string will been pass
                     if key and value:
-                        v = value.encode('utf-8')
                         if not args.quite:
-                            print(context_line_format.format(key, v))
-                        f.write(context_line_format.format(key, v) + '\n')
-
+                            print(context_line_format.format(key, value))
+                        f.write(context_line_format.format(key, value) + '\n')
     except KeyError:
         pass
