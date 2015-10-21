@@ -18,6 +18,8 @@ parser.add_argument('-l', '--localizable_folder',
 parser.add_argument('-f', '--localizable_file',
                     help='output strings file name',
                     default='Localizable.strings')
+parser.add_argument('-b', '--book_index',
+                    help='select book index', default=0)
 parser.add_argument('-q', '--quite', help='quite run', action="store_true")
 args = parser.parse_args()
 
@@ -32,7 +34,7 @@ language_map = {"Simplified Chinese": "zh-Hans.lproj",
                 "Norweglan": "nb.lproj",
                 "Dutch": "nl.lproj",
                 "Hungarian": "hu.lproj",
-                "Korean": "ko.lproj",
+                "Korean": "ko-KR.lproj",
                 "Japanese": "ja.lproj",
                 "Portuguese": "pt.lproj",
                 "Polish": "pl.lproj",
@@ -41,7 +43,7 @@ language_map = {"Simplified Chinese": "zh-Hans.lproj",
 
 book = xlrd.open_workbook(args.book_file, encoding_override='utf-8')
 # always use first one
-sh = book.sheet_by_index(0)
+sh = book.sheet_by_index(int(args.book_index))
 
 language = sh.row_values(0)
 mls = sh.col_values(0)
