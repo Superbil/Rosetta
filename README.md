@@ -1,15 +1,16 @@
-Rosetta
-=====================
+## Rosetta
 
 Covert excel file to [localizable](https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPInternational/Articles/StringsFiles.html) files
 
-Requirements
-=====
+## Requirements
 
 * xlrd
 
-Usage
-=====
+## Install
+
+    pip install -r requirements.txt
+
+## Usage
 
     usage: rosetta.py [-h] [-l LOCALIZABLE_FOLDER] [-f LOCALIZABLE_FILE] [-q]
                       [-o OUTPUT_FOLDER]
@@ -27,3 +28,8 @@ Usage
       -q, --quite           quite run
       -o OUTPUT_FOLDER, --output_folder OUTPUT_FOLDER
                             place to output
+
+
+## License
+
+Rosetta is available under the GPL v3. See the LICENSE file for more info.
