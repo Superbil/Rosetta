@@ -1,7 +1,7 @@
-apStringToLocalizable
+Rosetta
 =====================
 
-covert Excel file to [localizable](https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPInternational/Articles/StringsFiles.html) files
+Covert excel file to [localizable](https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPInternational/Articles/StringsFiles.html) files
 
 Requirements
 =====
@@ -11,9 +11,9 @@ Requirements
 Usage
 =====
 
-    usage: apStringToLocalizable.py [-h] [-l LOCALIZABLE_FOLDER] [-f LOCALIZABLE_FILE] [-q]
-                                    [-o OUTPUT_FOLDER]
-                                    book_file
+    usage: rosetta.py [-h] [-l LOCALIZABLE_FOLDER] [-f LOCALIZABLE_FILE] [-q]
+                      [-o OUTPUT_FOLDER]
+                      book_file
 
     positional arguments:
       book_file             appString file name
